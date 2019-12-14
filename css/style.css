@@ -10,10 +10,11 @@
 
 		/* Header/logo Title */
 		.header {
-			padding: 5%;
+			padding: 3%;
 			text-align: center;
 			background: #286fcc;
 			color: white;
+			border-bottom-right-radius: 40%;
 		}
 
 		/* Increase the font size of the heading */
@@ -24,8 +25,8 @@
 		/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
 		.navbar {
 			overflow: hidden;
-			background-color: #333;
 			position: sticky;
+			background: #ffffff;
 			position: -webkit-sticky;
 			top: 0;
 		}
@@ -34,10 +35,13 @@
 		.navbar a {
 			float: left;
 			display: block;
-			color: white;
+			background: rgb(185, 185, 185);
+			color: rgb(0, 0, 0);
 			text-align: center;
 			padding: 14px 20px;
+			margin: 5px;
 			text-decoration: none;
+			border-radius: 15px;
 		}
 
 
@@ -48,7 +52,7 @@
 
 		/* Change color on hover */
 		.navbar a:hover {
-			background-color: #ddd;
+			background-color: #777777;
 			color: black;
 		}
 
@@ -56,6 +60,7 @@
 		.navbar a.active {
 			background-color: #666;
 			color: white;
+			border-radius: 15px;
 		}
 
 		/* Column container */
@@ -73,17 +78,19 @@
 		.side {
 			-ms-flex: 20%;
 			/* IE10 */
-			flex: 20%;
+			flex: 29%;
 			background-color: #f1f1f1;
 			padding: 20px;
+			margin: 2px;
+			border-radius: 15px;
 		}
 
 		/* Main column */
 		.main {
 			-ms-flex: 80%;
 			/* IE10 */
-			flex: 80%;
-			background-color: white;
+			flex: 70%;
+			background-color: #ffffff;
 			padding: 20px;
 		}
 
@@ -96,9 +103,11 @@
 
 		/* Footer */
 		.footer {
+			margin-top: 10px;
 			padding: 20px;
 			text-align: center;
 			background: #ddd;
+			border-top-left-radius: 40%;
 		}
 
 		/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
